@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowsis form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: rgb(238, 239, 207);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        } 
+        .heading {
+            width: 98.5%;
+            background-color: rgb(218, 224, 103);
+            text-align: left;
+            padding-left: 20px;
+        }
+        .declarationline {
+            width: 98.5%;
+            background-color: rgb(232, 236, 166);
+            text-align: center;
+            padding-top: 10px;
+        }
+        .flex{
+            display: flex;
+        }
+        .upper{
+            display:flex;
+            justify-content: space-between;
+        }
+        .em_contact{
+            display:flex;
+            justify-content: flex-end;
+            padding-left: 900px;  
+            
+        }
+       
+       table{
+        width: 80%;
+       }
+       .signatures{
+        align-items: end;
+       }
+       .to_center{
+        text-align: center;
+       }
+       .to_right{
+        text-align: right;
+       }
+       .logo{
+        margin-left: 30px;
+        padding-top: 20px;
+        align-items: start;
+       }
+       .len1{
+        height: 30px;
+        width: 80%;
+       }
+       .len2{
+        height: 30px;
+        
+       }
+       .len3{
+        height: 30px;
+        width: 90%;
+        margin-top: 10px;
+       }
+       .len4{
+        height: 30px;
+        width: 90%;
+        
+       }
+       .len5{
+        height: 30px;
+        width: 90%;
+        
+       }
+       .pic{
+        padding-top: 20px;
+        margin-right: 40px;
+       }
+       .mainheading{
+        text-align: center;
+        /* padding-bottom: 30px; */
+        margin-top: 50px;
+       }
+       .emergency_name{
+        height: 30px;
+        width: 150px;
+        padding-left: 20px;
+        /* size: 90px; */
+       }
+       .emergency_relation{
+        height: 30px;
+        width: 150px;
+        /* text-align: right; */
+        padding-left: 100px;
+        /* size: 90px; */
+       }
+       .emergency_contact{
+        height: 30px;
+        width: 150px;
+        padding-right: 107px;
+        /* size: 90px; */
+        
+       }
+       .buttons{
+        
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+       }
+       .buttoncolor{
+        background-color: rgb(232, 236, 166);
+        padding: 10px 30px;
+       }
+       .tablebody{
+        text-align: center;
+       }
+    </style>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/8f8f636e9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="upper">
+            <div class="logo" >
+                <img src="C:\Users\DELL\Desktop\logo.png" alt="" width="100px" height="150px" >
+            </div>
+            <div>
+                <h1 class="mainheading">Internship Application Form</h1>
+            </div>
+            <div class="pic">
+               <a href="#"> <img src="C:\Users\DELL\Desktop\insert-picture-here.jpg" alt="C:\Users\DELL\Desktop\insert-picture-here.jpg" width="100px" height="150px" ></a>
+            </div>
+        </div>
+        
+        <div style="text-align: left;">
+            <h2 class="heading">Contact Details</h2>
+            <form id="form1">
+                <label for="fname">Name:<small>(please use capital letters)</small>
+                <input type="text" id="name" name="name" size="60"  class="len1" required /></label><br>
+                <div class="flex">
+                    <label for="dob">Birth Date:
+                        <input type="date" required class="len2" id="dob" min="1995-01-01" max="2003-12-31"> </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="Gender" name="gender">Gender:
+                            <input type="radio" id="male" name="gender"   value="Male" > Male
+                            <input type="radio" id="female" name="gender" value="Female" > Female
+                        </label>
+                </div>
+                <label for="Address">Address:
+                <input type="text" size="70" required class="len3" id="address"></label><br>
+                <div class="flex">
+                    <label for="phone">Phone Number:
+                    <input type="number" required class="len4" id="phone" maxlength="10" ></label>&nbsp;&nbsp;
+                    <label for="email">Email Address:
+                    <input type="email" required class="len5" id="email"></label>
+                </div>
+            </form>
+
+            <br> 
+        </div>
+        <div>
+            <h2 class="heading" >Educational Details</h2>
+            <table border="1">
+                <tr>
+                    <th>Board/university</th>
+                    <th>Institution</th>
+                    <th>Qualification</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td><input type="text" size="50px"></td>
+                    <td><input type="text" size="50px"></td>
+                    <td><input type="text" size="50px"></td>
+                    <td><input type="text" size="50px"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="50px"></td>
+                    <td><input type="text" size="50px"></td>
+                    <td><input type="text" size="50px"></td>
+                    <td><input type="text" size="50px"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="50px"></td>
+                    <td><input type="text" size="50px"></td>
+                    <td><input type="text" size="50px"></td>
+                    <td><input type="text" size="50px"></td>
+                </tr>
+
+
+            </table>
+        </div>
+        <div style="padding-left: 10px;">
+            <h2 class="heading">Experience Details</h2>
+            <table border="1" >
+                <tr>
+                    <th>Company Name</th>
+                    <th>Job Title</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td><input type="text" size="68px"></td>
+                    <td><input type="text" size="68px"></td>
+                    <td><input type="text" size="68px"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="68px"></td>
+                    <td><input type="text" size="68px"></td>
+                    <td><input type="text" size="68px"></td>
+                </tr>
+                
+            </table>
+        </div>
+        <div style="text-align: left;">
+            <h2 class="heading">Emergency Contact Number</h2>
+            <form id="form2">
+                <div class="flex">
+                    <div>
+                        <label for="fname">Name:
+                            <input type="text " required class="emergency_name"  id="name1" name="name1">
+                            </label>
+                    </div>&nbsp;&nbsp;
+                    <div class="em_contact">
+                        <label for="relation">Relationship:
+                            <input type="text"  required class="emergency_relation" id="relation" ></label>
+                    </div>
+                
+                    
+                </div><br>
+                <div style="text-align: right;">
+                    <label for="phone">Contact Number:
+                        <input type="text" required class="emergency_contact" id="emergency"></label>
+                </div>
+            </form>
+
+            <br>
+        </div>
+        <div>
+            <h2 class="declarationline">Declaration</h2><br>
+            <pre class="to_center">
+                I certify that my anwsers are true and complete to the best of my knowledge.
+                If this application leads to employment, I understand that false or misleading information in
+                my application or interview may result in my release.
+            </pre>
+        </div>
+        <div class="to_right">
+            <label for="signature" >Signature:
+                <input type="file" size="60px"></label><br>
+            <label for="date" style="padding-right: 140px;">Date:
+                <input type="date" size="60px">
+            </label>
+        </div><br><br>
+        <div class="buttons">
+            <div style="padding-left: 100px;"><button type="button" class="buttoncolor" onclick="getfocus()">New</button></div>
+            <div><button type="button" id="savebtn" class="buttoncolor" onclick="getdata()">Save</button></div>
+            <div><button type="button" id="updatebtn"  class="buttoncolor" onclick="updatedata(editedindex)" disabled="true">Update</button></div>
+            <div style="padding-right: 100px;"><button type="button" class="buttoncolor">Exit</button></div>
+        </div>
+        <div>
+            <!-- <p id="demo"></p>
+            <p id="demo1"></p> -->
+        </div>
+        <div>
+            <table border="1" class="tablebody" align="center">
+                <thead>
+                    <tr>
+                        <th>SL No</th>
+                        <th>Name</th>
+                        <th>DoB</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>      </th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody" class="tablebody">
+    
+
+                </tbody>
+                
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
